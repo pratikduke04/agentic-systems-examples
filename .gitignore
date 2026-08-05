@@ -1,0 +1,12 @@
+chroma_store
+saksham_store
+# Local secrets
+.env
+venv
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
