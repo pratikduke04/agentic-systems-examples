@@ -39,7 +39,7 @@ from ollama import Client, chat  # chat() talks to localhost; Client() targets a
 # Local tag MUST match a model shown by "ollama list" on this machine. Tiny models
 # (0.5B-2B) are the right choice for student laptops — avoid 70b+ tags that need
 # tens of GB of RAM and will freeze most machines.
-LOCAL_MODEL = "qwen2.5:0.5b"  # ~0.5B params — fastest laptop-friendly smoke test
+LOCAL_MODEL = "mistral-nemo:latest"  # ~0.5B params — fastest laptop-friendly smoke test
 # Cloud model name — verify the exact tag on ollama.com/library before relying on it.
 CLOUD_MODEL = "gpt-oss:120b"  # Much larger; runs on Ollama's servers, not your laptop
 CLOUD_HOST = "https://ollama.com"  # Ollama Cloud host (local default is localhost:11434)
