@@ -1,0 +1,9 @@
+streamlit
+langchain-core
+langchain-community
+langchain
+langchain-openai
+huggingface-hub
+chromadb
+sentence-transformers
+weave
