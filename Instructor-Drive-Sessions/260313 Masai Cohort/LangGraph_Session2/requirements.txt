@@ -9,3 +9,5 @@ matplotlib==3.8.2
 python-dotenv==1.0.1
 groq
 pyngrok
+langgraph-checkpoint-sqlite
+langchain-groq

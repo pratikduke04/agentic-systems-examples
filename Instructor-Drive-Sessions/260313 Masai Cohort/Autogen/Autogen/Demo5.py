@@ -1,10 +1,17 @@
+import os
+
 import streamlit as st
 import autogen
 import groq
+from dotenv import load_dotenv
 
+load_dotenv()
+
+
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # Step 1: Set up the Groq client with the new hardcoded API key.
 client = groq.Groq(
-    api_key="REPLACE_WITH_YOUR_GROQ_API_KEY",
+    api_key=GROQ_API_KEY,
 )
 
 # Step 2: Define the Diagnostic Agent

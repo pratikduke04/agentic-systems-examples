@@ -1,13 +1,19 @@
+from dotenv import load_dotenv
 import groq
 from typing_extensions import TypedDict
 from langgraph.graph import StateGraph, START, END
 import streamlit as st
 import matplotlib.pyplot as plt
 import networkx as nx
+import os
+
+
+load_dotenv()
+
 
 # Groq API setup with the hardcoded key
 client = groq.Groq(
-    api_key="REPLACE_WITH_YOUR_GROQ_API_KEY",
+    os.environ["GROQ_API_KEY"],
 )
 
 # Graph state definition

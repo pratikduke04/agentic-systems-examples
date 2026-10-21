@@ -1,0 +1,13 @@
+langchain
+langgraph
+streamlit
+matplotlib
+langchain-openai
+pydantic
+networkx
+matplotlib
+python-dotenv
+groq
+pyngrok
+langgraph-checkpoint-sqlite
+langchain-groq
